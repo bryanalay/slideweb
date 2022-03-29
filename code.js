@@ -13,14 +13,15 @@
 	next.onclick = function(){
 
 		if(i < 4){
-			hero.style.backgroundImage = 'url("'+backgroundImg[i+1]+'")';
+			hero.style.backgroundImage = url(""+backgroundImg[i+1]+"");
 			i++;
 		}
 	}
 	prev.onclick = function(){
 
 		if(i > 0){
-			hero.style.backgroundImage = 'url("'+backgroundImg[i-1]+'")';
+			hero.style.backgroundImage = url(""+backgroundImg[i-1]+"");
+			//'url("'+backgroundImg[i-1]+'")';
 			i--;
 		}
 	}
